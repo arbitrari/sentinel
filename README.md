@@ -10,6 +10,9 @@ _insert description_
 ## Preview
 _insert screenshot_
 
+## Contribute
+_insert how to contribute to project_
+
 ## Disclaimer
 This product is not in any way affiliated with the Tesla brand. This application does not require an internet connection, nor does it send any of your data anywhere. An internet connection may be used to notify of a newer version and download said version with user permission.
 
