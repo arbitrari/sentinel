@@ -11,7 +11,7 @@
 > _especially_ : a soldier standing guard at a point of passage (such as a gate)
 
 ## About
-_insert description_
+A free, open-source Windows/macOS application that allows you to efficiently view, manage, and export sentry and dashcam footage from your Tesla vehicle. It does require you to have access to the USB drive containing the footage, whether that be directly plugged into your computer or using a more complicated setup with a network share such as [TeslaUSB](https://github.com/cimryan/teslausb).
 
 ## Preview
 _insert screenshot_
