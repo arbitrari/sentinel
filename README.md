@@ -2,7 +2,7 @@
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="https://i.imgur.com/ufQq1Nv.png">
         <source media="(prefers-color-scheme: light)" srcset="https://i.imgur.com/JKk30GC.png">
-        <img src="https://i.imgur.com/QIF1lqQ.png" width="350">
+        <img src="https://i.imgur.com/JKk30GC.png" width="350">
     </picture>
 </p>
 
