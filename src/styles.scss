@@ -32,10 +32,7 @@ $sentinel-theme: mat.define-dark-theme((
 // that you are using.
 @include mat.all-component-themes($sentinel-theme);
 
-$main-background: #0d1117;
-$sec-background: #161b22;
-$accent: #563d7c;
-$text-color: #f6f6f6;
+@import 'global-vars';
 
 :root {
   font-family: Roboto, "Helvetica Neue", sans-serif;

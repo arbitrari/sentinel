@@ -1,3 +1,19 @@
 app-logo {
   width: 140px;
 }
+
+.app-frame {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+app-sidebar {
+  display: block;
+  height: calc(100vh - 64px);
+  width: 325px;
+}

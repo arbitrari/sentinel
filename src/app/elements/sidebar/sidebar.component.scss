@@ -1,0 +1,13 @@
+@import 'global-vars';
+
+.sidebar-container {
+    border-right: 1px solid $sec-background;
+    height: 100%;
+}
+
+.date-container {
+    text-align: center;
+    height: 64px;
+    border-top: 1px solid $sec-background;
+    border-bottom: 1px solid $sec-background;
+}

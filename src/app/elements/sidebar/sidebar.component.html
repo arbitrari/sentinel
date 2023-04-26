@@ -1,1 +1,11 @@
-<p>sidebar works!</p>
+<div class="sidebar-container">
+    <div class="calendar-container">
+        <mat-calendar [(selected)]="selectedDate"></mat-calendar>
+    </div>
+    <div class="date-container">
+        <h2>{{selectedDate | date: 'longDate'}}</h2>
+    </div>
+    <div class="nav-container">
+
+    </div>
+</div>
