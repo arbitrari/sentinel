@@ -1,0 +1,13 @@
+@import 'global-vars';
+
+
+svg {
+    fill: $text-color-light;
+}
+
+
+@media (prefers-color-scheme: dark) {
+    fill {
+        color: $text-color;
+    }
+}

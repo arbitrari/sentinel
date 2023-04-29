@@ -19,7 +19,15 @@ $sentinel-warn: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$sentinel-theme: mat.define-dark-theme((
+$sentinel-light-theme: mat.define-light-theme((
+  color: (
+    primary: $sentinel-primary,
+    accent: $sentinel-accent,
+    warn: $sentinel-warn,
+  )
+));
+
+$sentinel-dark-theme: mat.define-dark-theme((
   color: (
     primary: $sentinel-primary,
     accent: $sentinel-accent,
@@ -30,7 +38,7 @@ $sentinel-theme: mat.define-dark-theme((
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($sentinel-theme);
+@include mat.all-component-themes($sentinel-light-theme);
 
 @import 'global-vars';
 
@@ -40,8 +48,8 @@ $sentinel-theme: mat.define-dark-theme((
   line-height: 24px;
   font-weight: 400;
 
-  color: #0f0f0f;
-  background-color: #f6f6f6;
+  color: $text-color-light;
+  background-color: $main-background-light;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -50,7 +58,14 @@ $sentinel-theme: mat.define-dark-theme((
   -webkit-text-size-adjust: 100%;
 }
 
+.mat-toolbar {
+  background: $sec-background-light;
+  color: $text-color-light;
+}
+
 @media (prefers-color-scheme: dark) {
+  @include mat.all-component-colors($sentinel-dark-theme);
+  
   :root {
     color: $text-color;
     background-color: $main-background;
