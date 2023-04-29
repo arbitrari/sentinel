@@ -9,7 +9,18 @@ app-logo {
 }
 
 .content {
+  display: flex;
   flex: 1;
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex: 1 1;
+    // app-settings {
+    //   justify-self: flex-end;
+    // }
+  }
 }
 
 app-sidebar {

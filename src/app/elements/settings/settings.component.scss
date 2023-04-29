@@ -1,0 +1,13 @@
+@import 'global-vars';
+
+.settings-container {
+    padding: 8px 16px 8px 16px;
+    height: 350px;
+    border-top: 1px solid $sec-background-light;
+}
+
+@media (prefers-color-scheme: dark) {
+    .settings-container {
+        border-top: 1px solid $sec-background;
+    }
+}
