@@ -8,11 +8,44 @@
 // Be sure that you only ever include this mixin once!
 @include mat.core();
 
+$accent-palette: (
+    50 : #ebe8ef,
+    100 : #ccc5d8,
+    200 : #ab9ebe,
+    300 : #8977a3,
+    400 : #6f5a90,
+    500 : #563d7c,
+    600 : #4f3774,
+    700 : #452f69,
+    800 : #3c275f,
+    900 : #2b1a4c,
+    A100 : #b18bff,
+    A200 : #8f58ff,
+    A400 : #6c25ff,
+    A700 : #5b0cff,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #ffffff,
+        500 : #ffffff,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$sentinel-primary: mat.define-palette(mat.$indigo-palette);
-$sentinel-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$sentinel-primary: mat.define-palette($accent-palette, 500);
+$sentinel-accent: mat.define-palette($accent-palette, 500);
 
 // The warn palette is optional (defaults to red).
 $sentinel-warn: mat.define-palette(mat.$red-palette);

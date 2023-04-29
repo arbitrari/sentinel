@@ -12,6 +12,11 @@
     border-bottom: 1px solid $sec-background-light;
 }
 
+.folder-location-input {
+    width: 95%;
+    margin: 8px 8px 0 8px;
+}
+
 
 @media (prefers-color-scheme: dark) {
     .sidebar-container {

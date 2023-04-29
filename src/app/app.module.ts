@@ -10,6 +10,11 @@ import { SidebarComponent } from './elements/sidebar/sidebar.component';
 import { SettingsComponent } from './elements/settings/settings.component';
 import { ScrubberComponent } from './elements/scrubber/scrubber.component';
 import { MatLuxonDateModule } from "@angular/material-luxon-adapter";
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatFormFieldModule } from "@angular/material/form-field";
+import { MatInputModule } from '@angular/material/input';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent, 
@@ -20,7 +25,11 @@ import { MatLuxonDateModule } from "@angular/material-luxon-adapter";
     BrowserAnimationsModule,
     MatToolbarModule,
     MatDatepickerModule,
-    MatLuxonDateModule
+    MatLuxonDateModule,
+    MatTabsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
