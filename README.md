@@ -25,6 +25,8 @@ This application is still in early development and is not fully-functional. Once
 Sentinel is written in the Angular framework and uses Tauri to wrap it into a desktop application with access to native APIs. Tauri is a more modern approach than Electron as it uses Rust and a custom web renderer that is lighter weight and more performant than Chromium that Electron uses.
 
 ### Prerequisites
+#### NodeJS and NPM
+This project relies on NPM packages and, therefore, NodeJS. Install the LTS version of NodeJS [here](https://nodejs.org/en) **OR** get [nvm](https://github.com/nvm-sh/nvm#about) / [nvm-windows](https://github.com/coreybutler/nvm-windows#install-nvm-windows) and run `nvm install lts` in terminal.
 #### Tauri Setup
 There are a few things that you must do to prepare your environment for Tauri. Follow the official [Tauri Prerequisites guide](https://tauri.app/v1/guides/getting-started/prerequisites) for your particular operating system. This will install Rust and other various dependencies required by Tauri.
 
