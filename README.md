@@ -11,13 +11,29 @@
 > _especially_ : a soldier standing guard at a point of passage (such as a gate)
 
 ## About
-A free, open-source Windows/macOS application that allows you to efficiently view, manage, and export sentry and dashcam footage from your Tesla vehicle. It does require you to have access to the USB drive containing the footage, whether that be directly plugged into your computer or using a more complicated setup with a network share such as [TeslaUSB](https://github.com/cimryan/teslausb).
+A free, open-source Windows, macOS, and Linux application that allows you to efficiently view, manage, and export sentry and dashcam footage from your Tesla vehicle. It does require you to have access to the USB drive containing the footage, whether that be directly plugged into your computer or using a more complicated setup with a network share such as [TeslaUSB](https://github.com/cimryan/teslausb) or other similar setups.
 
 ## Preview
 _insert screenshot_
 
 ## Contribute
-_insert how to contribute to project_
+Sentinel is written in the Angular framework and uses Tauri to wrap it into a desktop application with access to native APIs. Tauri is a more modern approach than Electron as it uses Rust and a custom web renderer that is lighter weight and more performant than Chromium that Electron uses.
+
+### Prerequisites
+#### Tauri Setup
+There are a few things that you must do to prepare your environment for Tauri. Follow the official [Tauri Prerequisites guide](https://tauri.app/v1/guides/getting-started/prerequisites) for your particular operating system. This will install Rust and other various dependencies required by Tauri.
+
+On VS Code, you should install the offical [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) and the [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) extensions.
+
+#### Angular Setup
+It is recommended to install the Angular CLI globally on your system. This can be done via `npm install -g @angular/cli` in your terminal. 
+
+On VS Code, you should install the [Angular Language Service](https://marketplace.visualstudio.com/items?itemName=Angular.ng-template) extension.
+
+### Running Locally
+
+_fill out later_
+
 
 ## Disclaimer
 This product is not in any way affiliated with the Tesla brand. This application does not require an internet connection, nor does it send any of your data anywhere. An internet connection may be used to notify of a newer version and download said version with user permission.
