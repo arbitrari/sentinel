@@ -14,7 +14,12 @@
 A free, open-source Windows, macOS, and Linux application that allows you to efficiently view, manage, and export sentry and dashcam footage from your Tesla vehicle. It does require you to have access to the USB drive containing the footage, whether that be directly plugged into your computer or using a more complicated setup with a network share such as [TeslaUSB](https://github.com/cimryan/teslausb) or other similar setups.
 
 ## Preview
-_insert screenshot_
+Nothing to show here...yet.
+
+
+## Install
+
+This application is still in early development and is not fully-functional. Once it is, there will be instructions in this section and releases within the Releases tab on the right.
 
 ## Contribute
 Sentinel is written in the Angular framework and uses Tauri to wrap it into a desktop application with access to native APIs. Tauri is a more modern approach than Electron as it uses Rust and a custom web renderer that is lighter weight and more performant than Chromium that Electron uses.
@@ -32,8 +37,25 @@ On VS Code, you should install the [Angular Language Service](https://marketplac
 
 ### Running Locally
 
-_fill out later_
+First, ensure you have all of the dependencies installed by running `npm install` in terminal.
 
+To run a local developer instance of the application, run `npm run tauri dev` in terminal. If the application does not open automatically, you should be able to find the binary in `src-tauri/target/debug` that is compatible with your OS.
+
+Read the [Tauri Documentation](https://tauri.app/v1/guides/development/development-cycle) on this for more info.
+
+> **NOTE:** If you are on Linux, it may fail to launch when using the integrated VS Code terminal. This can be resolved by running in the native terminal. For some, running `unset GTK_PATH` within VS Code terminal fixes this issue as well.
+
+If, for whatever reason, you do not want to run the application within Tauri, you may run `ng serve` to serve a local instance of just the Angular application in your web browser. There are no guarentees everything will work properly this way, though. 
+
+### Building For Production
+Official versions of this application are built automatically with CI/CD via GitHub Workflows. However, you can build it locally on your own machine if you wish.
+
+To build the application locally, run `npm run tauri build` within terminal. This will create a native binary for whatever OS you are using. These binaries should be located in `src-tauri/target/release/bundle`.
+
+Read the [Tauri Documentation](https://tauri.app/v1/guides/building/) on this for more info.
+
+### Pull Requests
+In order to contribute to the project, you must [fork this repository](https://github.com/arbitrarydot/sentinel/fork) and then [create a Pull Request](https://github.com/arbitrarydot/sentinel/compare) that contains your changes. Please do your best to be descriptive in your title and explain what your PR adds to the project in the description. Your PR should be reviewed within a few days by a maintaner and either merged or requested to be tweaked.
 
 ## Disclaimer
 This product is not in any way affiliated with the Tesla brand. This application does not require an internet connection, nor does it send any of your data anywhere. An internet connection may be used to notify of a newer version and download said version with user permission.
