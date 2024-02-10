@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "sentinel:build:production"
+              "buildTarget": "sentinel:build:production"
             },
             "development": {
-              "browserTarget": "sentinel:build:development"
+              "buildTarget": "sentinel:build:development"
             }
           },
           "defaultConfiguration": "development"
