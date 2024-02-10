@@ -1,6 +1,9 @@
 <div class="app-frame">
   <mat-toolbar>
     <app-logo></app-logo>
+    <button mat-icon-button class="theme-button" (click)="theme.themeType == ThemeType.Light ? setTheme(ThemeType.Dark) : setTheme(ThemeType.Light)">
+      <mat-icon [fontIcon]="theme.themeType == ThemeType.Light ? 'brightness_5' : 'dark_mode'"></mat-icon>
+    </button>
   </mat-toolbar>
   <div class="content">
     <app-sidebar [ngClass]="theme.themeType"></app-sidebar>

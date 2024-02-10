@@ -10,6 +10,7 @@ import { OverlayContainer } from "@angular/cdk/overlay";
 })
 export class AppComponent implements OnInit {
   @HostBinding('class') componentCssClass = ThemeType.Dark;
+  ThemeType = ThemeType;
 
   constructor(public overlayContainer : OverlayContainer,
               public theme: ThemeService) {}
