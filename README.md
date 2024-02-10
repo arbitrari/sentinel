@@ -10,12 +10,17 @@
 > _sen·​ti·​nel   sen-tə-nəl_   
 > _especially_ : a soldier standing guard at a point of passage (such as a gate)
 
+> [!CAUTION]
+> This project is still in its very early pages and does not currently function.
+
 ## About
 A free, open-source Windows, macOS, and Linux application that allows you to efficiently view, manage, and export sentry and dashcam footage from your Tesla vehicle. It does require you to have access to the USB drive containing the footage, whether that be directly plugged into your computer or using a more complicated setup with a network share such as [TeslaUSB](https://github.com/cimryan/teslausb) or other similar setups.
 
 ## Preview
-Nothing to show here...yet.
 
+A better preview will be here when the project is functional
+
+<img src="https://i.imgur.com/NfKVoVH.png" width="750">
 
 ## Install
 
@@ -45,7 +50,8 @@ To run a local developer instance of the application, run `npm run tauri dev` in
 
 Read the [Tauri Documentation](https://tauri.app/v1/guides/development/development-cycle) on this for more info.
 
-> **NOTE:** If you are on Linux, it may fail to launch when using the integrated VS Code terminal. This can be resolved by running in the native terminal. For some, running `unset GTK_PATH` within VS Code terminal fixes this issue as well.
+> [!TIP]
+> If you are on Linux, it may fail to launch when using the integrated VS Code terminal. This can be resolved by running in the native terminal. For some, running `unset GTK_PATH` within VS Code terminal fixes this issue as well.
 
 If, for whatever reason, you do not want to run the application within Tauri, you may run `ng serve` to serve a local instance of just the Angular application in your web browser. There are no guarentees everything will work properly this way, though. 
 
