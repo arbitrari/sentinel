@@ -3,10 +3,10 @@
     <app-logo></app-logo>
   </mat-toolbar>
   <div class="content">
-    <app-sidebar></app-sidebar>
+    <app-sidebar [ngClass]="theme.themeType"></app-sidebar>
     <div class="main">
-      <app-scrubber></app-scrubber>
-      <app-settings></app-settings>
+      <app-scrubber [ngClass]="theme.themeType"></app-scrubber>
+      <app-settings [ngClass]="theme.themeType"></app-settings>
     </div>
   </div>
 </div>

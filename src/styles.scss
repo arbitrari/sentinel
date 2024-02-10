@@ -81,9 +81,6 @@ $sentinel-dark-theme: mat.define-dark-theme((
   line-height: 24px;
   font-weight: 400;
 
-  color: $text-color-light;
-  background-color: $main-background-light;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -91,22 +88,32 @@ $sentinel-dark-theme: mat.define-dark-theme((
   -webkit-text-size-adjust: 100%;
 }
 
-.mat-toolbar {
-  background: $sec-background-light;
+:root.light-theme {
+  @include mat.all-component-colors($sentinel-light-theme);
   color: $text-color-light;
+  background-color: $main-background-light;
 }
 
-@media (prefers-color-scheme: dark) {
-  @include mat.all-component-colors($sentinel-dark-theme);
-  
-  :root {
-    color: $text-color;
-    background-color: $main-background;
+.light-theme {
+  .mat-toolbar {
+    background: $sec-background-light !important;
+    color: $text-color-light;
+    border-bottom: 1px solid $sec-background-light;
   }
+}
+
+:root.dark-theme {
+  @include mat.all-component-colors($sentinel-dark-theme);
+  color: $text-color !important;
+  background-color: $main-background !important;
+}
+
+.dark-theme {
 
   .mat-toolbar {
-    background: $sec-background;
+    background: $main-background !important;
     color: $text-color;
+    border-bottom: 1px solid $sec-background;
   }
 }
 

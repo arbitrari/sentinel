@@ -18,7 +18,7 @@
 }
 
 
-@media (prefers-color-scheme: dark) {
+:host(.dark-theme) {
     .sidebar-container {
         border-right: 1px solid $sec-background;
     }

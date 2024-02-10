@@ -6,7 +6,7 @@ svg {
 }
 
 
-@media (prefers-color-scheme: dark) {
+:host(.dark-theme) {
     fill {
         color: $text-color;
     }
